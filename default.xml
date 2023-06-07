@@ -42,6 +42,8 @@
 
   <!-- AUR packages -->
   <project path="packages/adw-gtk3" name="adw-gtk3" remote="aur"></project>
+  <project path="packages/cosmic-epoch-git" name="cosmic-epoch-git" remote="aur"></project>
+  <project path="packages/cosmic-text-editor-git" name="cosmic-text-editor-git" remote="aur"></project>
   <project path="packages/python-gbinder" name="python-gbinder" remote="aur"></project>
   <project path="packages/libglibutil" name="libglibutil" remote="aur"></project>
   <project path="packages/libgbinder" name="libgbinder" remote="aur"></project>
@@ -71,5 +73,15 @@
     <pkg>plasma-wayland-session</pkg>
     <pkg>kde-utilities-meta</pkg>
     <pkg>kde-system-meta</pkg>
+  </profile>
+
+  <profile name="cosmic" dm="gdm">
+    <!-- WayDroid -->
+    <pkg>waydroid-blend-git</pkg>
+    <pkg>waydroid-image</pkg>
+    <!-- Cosmic packages -->
+    <pkg>gnome-software</pkg>
+    <pkg>cosmic-epoch-git</pkg>
+    <pkg>cosmic-text-editor-git</pkg>
   </profile>
 </manifest>
